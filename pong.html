@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pong.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="pong.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="grid1"> <a href="index.html">Classic Games By ETIC</a> </div>
+        <div class="grid">
+            <div class="img"><img src="imagens/Pong_edited.png" alt="pong" /> </div>
+            <div class="name"> <a href="pong.html">Pong</a></div>
+        </div>
+        <div class="grid">
+            <div class="img"><img src="imagens/Tetris_edited.png" alt="pong" /> </div>
+            <div class="name"> <a href="tetris.html">Tetris</a></div>
+        </div>
+    </nav>
+
+   <main>
+        <div>
+            <div id="Start_menu" class="modalStart">
+                <div class="modalContentStart">
+                    <div>
+                        <h3>Pong</h3>
+                        <button id="start" class="buttons">Start game</button>
+                    </div>
+                    <div>
+                        <h3>Difficulty</h3>
+                        <button id="normal" class="normal buttons">Normal</button>
+                        <button id="hard" class="hard">Hard</button>
+                    </div>
+                    <div>
+                        <h3>Highscore:</h3>
+                        <div id="highscore" class="highscore">0</div><br>
+                    </div>
+                </div>
+            </div>
+
+            <canvas id="table" width="600" height="400"></canvas>
+
+            <div id="Pause_menu" class="modalPause">
+                <div class="modalContentPause">
+                    <h2>Pause</h2>
+                    <button id="continue" class="buttons">Continue</button>
+                    <button id="restart" class="buttons">Restart</button>
+                </div>
+            </div>
+
+            <div id="gameOverMenu" class="modalGameOver">
+                <div class="modalContentGameOver">
+                    <h2>Game Over</h2>
+                    <button id="try_again" class="buttons">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h5>
+            By: Ana Beatriz Dala and João Sousa
+        </h5>
+    </footer>
+
+    <script src="pong.js"></script>
+</body>
+
+</html>

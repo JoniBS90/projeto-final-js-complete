@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+}
+
+body {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.navbar {
+    display: grid;
+    background-color: gray;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    font-size: 25px;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.grid1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.name a {
+    text-decoration: none;
+    color: black;
+}
+
+.name a:hover {
+    text-decoration: underline
+}
+
+.img {
+    margin-right: 10px;
+}
+
+.name {
+    text-align: center;
+}
+
+.grid1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 22px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+
+.buttons {
+    padding: 10px 15px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.hard {
+    padding: 10px 22px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modalStart {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modalContentStart {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    border: 10px solid black;
+}
+
+.modalPause {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modalContentPause {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    border: 10px solid black;
+}
+
+.modalGameOver {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modalContentGameOver {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    border: 10px solid black;
+}
+
+h5 {
+    text-align: center;
+}
+
+.footer {
+    display: grid;
+    background-color: gray;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}

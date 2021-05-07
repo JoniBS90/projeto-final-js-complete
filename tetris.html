@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+
+    <link rel="stylesheet" href="tetris.css">
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="grid1"> <a href="index.html">Classic Games By ETIC</a> </div>
+        <div class="grid">
+            <div class="img"><img src="imagens/Pong_edited.png" alt="pong" /> </div>
+            <div class="name"> <a href="pong.html">Pong</a></div>
+        </div>
+        <div class="grid">
+            <div class="img"><img src="imagens/Tetris_edited.png" alt="pong" /> </div>
+            <div class="name"> <a href="tetris.html">Tetris</a></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="game">
+
+            <div id="Start_menu" class="modalStart">
+                <div class="modalContentStart">
+                    <div>
+                        <h3>Tetris</h3>
+                        <button id="start" class="buttons">Start game</button>
+                    </div>
+                    <div>
+                        <h3>Difficulty:</h3>
+                        <button id="normal" class="normal buttons">Normal</button>
+                        <button id="hard" class="hard">Hard</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Pause_menu" class="modalPause">
+                <div class="modalContentPause">
+                    <h2>Pause</h2>
+                    <button id="continue" class="buttons">Continue</button>
+                    <button id="restart" class="buttons">Restart</button>
+                </div>
+            </div>
+
+            <div id="gameOverMenu" class="modalGameOver">
+                <div class="modalContentGameOver">
+                    <h2>Game Over</h2>
+                    <button id="try_again" class="buttons">Try Again</button>
+                </div>
+
+            </div>
+
+            <canvas id="tetris" width="400" height="800"></canvas>
+
+        </div>
+        <div class="controls">
+            <div class="display">
+                Score: <div id="score" class="score">0</div><br>
+                Highscore: <div id="highscore" class="highscore">0</div><br>
+                Level: <div id="level" class="level">1</div>
+            </div>
+            <h3>Controls:</h3>
+            <p>
+                Arrow Key Up: Rotate Piece<br>
+                Arrow key Left: Move Left<br>
+                Arrow key Right: Move Right<br>
+                Arrow Key Down: Move Down<br>
+                Space-Bar: Pause
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <h5>
+            By: Ana Beatriz Dala and João Sousa
+        </h5>
+    </footer>
+
+    <script src="tetris.js"></script>
+</body>
+
+</html>
